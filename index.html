@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orhan Veli Kanık - Garip Akımının Öncüsü</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Ana font olarak Inter kullanılıyor */
         body {
@@ -15,15 +14,28 @@
         .title-font {
             font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
         }
+        /* Küçük görsel için özel stil */
+        .small-image-float {
+            float: left; /* Metnin yanında solda yüzecek */
+            margin-right: 1.5rem; /* Metinle arasında boşluk */
+            margin-bottom: 0.5rem; /* Metinle arasında boşluk */
+        }
+        @media (max-width: 640px) { /* Mobil cihazlarda float'ı kaldır */
+            .small-image-float {
+                float: none;
+                margin-right: 0;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
-    <!-- Ana Konteyner -->
-    <div class="container mx-auto p-4 sm:p-8 lg:p-12 max-w-7xl">
+    <!-- Ana Konteyner --><div class="container mx-auto p-4 sm:p-8 lg:p-12 max-w-7xl">
 
-        <!-- Başlık Bölümü (Header) -->
-        <header class="text-center py-10 bg-white shadow-lg rounded-xl mb-12">
+        <!-- Başlık Bölümü (Header) --><header class="text-center py-10 bg-white shadow-lg rounded-xl mb-12">
             <h1 class="title-font text-5xl sm:text-6xl font-extrabold text-blue-900 leading-tight">
                 Orhan Veli Kanık
             </h1>
@@ -32,21 +44,18 @@
             </p>
         </header>
 
-        <!-- İçerik Bölümü -->
-        <main class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <!-- İçerik Bölümü --><main class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-            <!-- Sol Sütun: Görsel ve Kısa Bilgiler -->
-            <div class="lg:col-span-1 bg-white p-6 rounded-xl shadow-lg h-full">
+            <!-- Sol Sütun: Büyük Görsel ve Kısa Bilgiler --><div class="lg:col-span-1 bg-white p-6 rounded-xl shadow-lg h-full">
                 <div class="space-y-6">
-                    <!-- Orhan Veli Görseli (Placeholder) -->
-                    <img  src="https://example.com/path/to/orhan-veli.jpg"
-  alt="Orhan Veli Kanık'ın Portresi"
-  class="w-full h-auto object-cover rounded-xl shadow-md transition duration-300 hover:shadow-xl"
-/>
+                    <!-- Orhan Veli'nin Büyük Portresi --><img
+                        src="https://upload.wikimedia.org/wikipedia/tr/b/b3/Orhan_Veli_Kanik_1947.jpg"
+                        alt="Orhan Veli Kanık'ın Portresi"
+                        class="w-full h-auto object-cover rounded-xl shadow-md transition duration-300 hover:shadow-xl"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x400/94a3b8/000?text=Görsel+Bulunamadı';"
                     >
 
-                    <!-- Kısa Bilgiler Kartı -->
-                    <div class="border-t pt-4 border-gray-200">
+                    <!-- Kısa Bilgiler Kartı --><div class="border-t pt-4 border-gray-200">
                         <h3 class="text-2xl font-semibold mb-3 text-blue-900">Kısa Bilgiler</h3>
                         <ul class="space-y-2 text-lg text-gray-700">
                             <li class="flex justify-between items-center border-b pb-1">
@@ -70,12 +79,16 @@
                 </div>
             </div>
 
-            <!-- Sağ Sütun: Biyografi ve Şiir -->
-            <div class="lg:col-span-2 space-y-10">
+            <!-- Sağ Sütun: Biyografi ve Şiir --><div class="lg:col-span-2 space-y-10">
 
-                <!-- Biyografi ve Hayatının Özeti -->
-                <section id="biyografi" class="bg-white p-8 rounded-xl shadow-lg">
+                <!-- Biyografi ve Hayatının Özeti --><section id="biyografi" class="bg-white p-8 rounded-xl shadow-lg">
                     <h2 class="title-font text-3xl font-bold mb-4 border-b-2 pb-2 text-blue-800">Hayatı ve Sanat Anlayışı</h2>
+                    <!-- Küçük Görsel (metnin yanında) --><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Orhan_Veli_Kanik.jpg/220px-Orhan_Veli_Kanik.jpg"
+                        alt="Orhan Veli Kanık (küçük)"
+                        class="small-image-float w-32 h-32 object-cover rounded-lg shadow-sm"
+                        onerror="this.onerror=null; this.src='https://placehold.co/128x128/94a3b8/000?text=Küçük+Görsel';"
+                    >
                     <p class="text-lg leading-relaxed mb-4 text-gray-700">
                         Orhan Veli Kanık, 13 Nisan 1914'te İstanbul'da doğdu. Türk şiirinde 1940'lı yıllarda büyük bir değişime imza atan Garip akımının (Birinci Yeni) kurucularındandır. Melih Cevdet Anday ve Oktay Rifat ile birlikte yayımladığı "Garip" adlı ortak kitap, Türk şiirinin estetik anlayışını kökten değiştirdi.
                     </p>
@@ -87,8 +100,7 @@
                     </p>
                 </section>
 
-                <!-- Garip Akımı (Manifesto) Bölümü -->
-                <section id="garip-akimi" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
+                <!-- Garip Akımı (Manifesto) Bölümü --><section id="garip-akimi" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
                     <h2 class="title-font text-3xl font-bold mb-4 text-blue-800">Garip Manifestosu</h2>
                     <blockquote class="italic text-xl text-gray-600 border-l-4 border-blue-300 pl-4 py-2">
                         "Şiirin, o güne kadar alışılmış ve kabul edilmiş her türlü kural, kalıp ve endişeden sıyrılıp, tamamen serbest bir anlatıma kavuşması gerektiğini savunuyoruz."
@@ -101,8 +113,7 @@
                     </ul>
                 </section>
 
-                <!-- Bir Şiiri: İstanbul'u Dinliyorum -->
-                <section id="siir" class="bg-blue-900 text-white p-8 rounded-xl shadow-xl">
+                <!-- Bir Şiiri: İstanbul'u Dinliyorum --><section id="siir" class="bg-blue-900 text-white p-8 rounded-xl shadow-xl">
                     <h2 class="title-font text-3xl font-bold mb-4 border-b pb-2 border-blue-700">İstanbul'u Dinliyorum</h2>
                     <pre class="whitespace-pre-wrap text-xl leading-relaxed font-serif">
 İstanbul'u dinliyorum, gözlerim kapalı;
@@ -124,8 +135,7 @@ Her şey, bir anda, bitiveriyor;
             </div>
         </main>
 
-        <!-- Alt Bilgi (Footer) -->
-        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+        <!-- Alt Bilgi (Footer) --><footer class="text-center mt-12 py-6 border-t border-gray-300">
             <p class="text-gray-500 text-sm">
                 &copy; 2025 Orhan Veli Kanık Bilgi Sayfası. Tüm hakları Garip Akımına aittir.
             </p>
