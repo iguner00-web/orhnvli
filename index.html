@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orhan Veli Kanık - Garip Akımının Öncüsü</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ana font olarak Inter kullanılıyor */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Başlıklar için daha dramatik bir görünüm */
+        .title-font {
+            font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Ana Konteyner -->
+    <div class="container mx-auto p-4 sm:p-8 lg:p-12 max-w-7xl">
+
+        <!-- Başlık Bölümü (Header) -->
+        <header class="text-center py-10 bg-white shadow-lg rounded-xl mb-12">
+            <h1 class="title-font text-5xl sm:text-6xl font-extrabold text-blue-900 leading-tight">
+                Orhan Veli Kanık
+            </h1>
+            <p class="mt-4 text-xl sm:text-2xl font-light text-blue-600">
+                Şiirde Devrim: Garip Akımının Öncüsü
+            </p>
+        </header>
+
+        <!-- İçerik Bölümü -->
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+            <!-- Sol Sütun: Görsel ve Kısa Bilgiler -->
+            <div class="lg:col-span-1 bg-white p-6 rounded-xl shadow-lg h-full">
+                <div class="space-y-6">
+                    <!-- Orhan Veli Görseli (Placeholder) -->
+                    <img
+                        src="https://placehold.co/400x400/1e40af/ffffff?text=Orhan+Veli+Kanık"
+                        alt="Orhan Veli Kanık'ın Portresi"
+                        class="w-full h-auto object-cover rounded-xl shadow-md transition duration-300 hover:shadow-xl"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x400/94a3b8/000?text=Görsel+Bulunamadı';"
+                    >
+
+                    <!-- Kısa Bilgiler Kartı -->
+                    <div class="border-t pt-4 border-gray-200">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-900">Kısa Bilgiler</h3>
+                        <ul class="space-y-2 text-lg text-gray-700">
+                            <li class="flex justify-between items-center border-b pb-1">
+                                <span class="font-medium text-blue-700">Doğum:</span>
+                                <span>13 Nisan 1914</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b pb-1">
+                                <span class="font-medium text-blue-700">Ölüm:</span>
+                                <span>14 Kasım 1950</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b pb-1">
+                                <span class="font-medium text-blue-700">Akım:</span>
+                                <span>Garip (Birinci Yeni)</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-1">
+                                <span class="font-medium text-blue-700">Önemli Eser:</span>
+                                <span>Garip, Vazgeçemediğim</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağ Sütun: Biyografi ve Şiir -->
+            <div class="lg:col-span-2 space-y-10">
+
+                <!-- Biyografi ve Hayatının Özeti -->
+                <section id="biyografi" class="bg-white p-8 rounded-xl shadow-lg">
+                    <h2 class="title-font text-3xl font-bold mb-4 border-b-2 pb-2 text-blue-800">Hayatı ve Sanat Anlayışı</h2>
+                    <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                        Orhan Veli Kanık, 13 Nisan 1914'te İstanbul'da doğdu. Türk şiirinde 1940'lı yıllarda büyük bir değişime imza atan Garip akımının (Birinci Yeni) kurucularındandır. Melih Cevdet Anday ve Oktay Rifat ile birlikte yayımladığı "Garip" adlı ortak kitap, Türk şiirinin estetik anlayışını kökten değiştirdi.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                        O güne kadar şiirde bir zorunluluk olarak görülen ölçü, uyak ve sanatkârane söyleyiş biçimlerini reddetti. Şiiri, yüksek zümrenin değil, sıradan insanın günlük yaşamına, diline ve duygularına indirdi. Sokaktaki adamın konuşma dilini, mizahı ve ironiyi şiirine katarak sade bir anlatımı benimsedi.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Kısa süren yaşamına (36 yaş) rağmen, Türk edebiyatında derin izler bıraktı. İstanbul, onun şiirlerinin ana temalarından biri olmuş, İstanbul'u tüm sesleri ve halleriyle dinleyen, gözlemleyen bir şair olarak anılmıştır. Edebiyat tarihindeki önemi, şiiri kalıplarından kurtarması ve geniş kitlelere ulaştırmasıdır.
+                    </p>
+                </section>
+
+                <!-- Garip Akımı (Manifesto) Bölümü -->
+                <section id="garip-akimi" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
+                    <h2 class="title-font text-3xl font-bold mb-4 text-blue-800">Garip Manifestosu</h2>
+                    <blockquote class="italic text-xl text-gray-600 border-l-4 border-blue-300 pl-4 py-2">
+                        "Şiirin, o güne kadar alışılmış ve kabul edilmiş her türlü kural, kalıp ve endişeden sıyrılıp, tamamen serbest bir anlatıma kavuşması gerektiğini savunuyoruz."
+                    </blockquote>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
+                        <li>Ölçü, uyak ve dörtlük gibi geleneksel biçimlerin reddi.</li>
+                        <li>Şiirde mizahın, ironinin ve şaşırtmacanın kullanımı.</li>
+                        <li>Sıradan insanların, günlük hayatın ve basit konuların şiire dahil edilmesi.</li>
+                        <li>Şiir dilinin, konuşma diline yaklaştırılması ve sadeleştirilmesi.</li>
+                    </ul>
+                </section>
+
+                <!-- Bir Şiiri: İstanbul'u Dinliyorum -->
+                <section id="siir" class="bg-blue-900 text-white p-8 rounded-xl shadow-xl">
+                    <h2 class="title-font text-3xl font-bold mb-4 border-b pb-2 border-blue-700">İstanbul'u Dinliyorum</h2>
+                    <pre class="whitespace-pre-wrap text-xl leading-relaxed font-serif">
+İstanbul'u dinliyorum, gözlerim kapalı;
+Önce hafiften bir rüzgâr esiyor;
+Yavaş yavaş sallanıyor
+Yapraklar, ağaçlarda;
+Uzaklarda, çok uzaklarda,
+Sucuların hiç durmayan çıngırakları.
+
+İstanbul'u dinliyorum, gözlerim kapalı;
+Kuşlar geçiyor, derken;
+Çevremin daraldığını hissediyorum.
+Her şey, bir anda, bitiveriyor;
+İstanbul'u dinliyorum, gözlerim kapalı.
+                    </pre>
+                    <p class="text-right mt-4 text-gray-300">- Orhan Veli Kanık</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- Alt Bilgi (Footer) -->
+        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+            <p class="text-gray-500 text-sm">
+                &copy; 2025 Orhan Veli Kanık Bilgi Sayfası. Tüm hakları Garip Akımına aittir.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
